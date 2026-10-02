@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SendMessage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="etMessage">Escribe aqui tu mensaje</string>
+    <string name="btMessage">Button</string>
+    <string name="tvMessage">Este es el mensaje +</string>
+    <string name="tvImage">Es una imagen</string>
+    <string name="tvTitle">Aplicacion para enviar mensajes</string>
+</resources>
