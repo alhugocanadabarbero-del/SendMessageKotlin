@@ -30,7 +30,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Generar la documentación HTML con Dokka
-        run: ./gradlew dokkaGenerate
+        run: ./gradlew dokkaHtml
 
       - name: Evitar que Jekyll rompa el formato de Dokka
         run: touch documentation/.nojekyll
