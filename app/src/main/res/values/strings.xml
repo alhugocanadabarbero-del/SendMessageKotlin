@@ -8,6 +8,7 @@
     <string name="etMessage">Escribe aqui tu mensaje</string>
     <string name="btMessage">Button</string>
     <string name="tvMessage">Este es el mensaje +</string>
+    <string name="tvAuthor">Autor del mensaje</string>
     <string name="tvImage">Es una imagen</string>
     <string name="tvTitle">Aplicacion para enviar mensajes</string>
 </resources>

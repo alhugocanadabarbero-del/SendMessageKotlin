@@ -26,6 +26,7 @@ class ViewMessageActivity : AppCompatActivity() {
             insets
         }
 
+        val tvAuthor = findViewById<TextView>(R.id.tvAuthor)
         val tvMessage = findViewById<TextView>(R.id.tvMessage)
 
         /* 1. Recoger cadena simple desde el Bundle
@@ -44,7 +45,8 @@ class ViewMessageActivity : AppCompatActivity() {
 
         if (message != null) {
             val senderName = "${message.sender.name} ${message.sender.surname}"
-            tvMessage.text = "De: $senderName\n\n${message.content}"
+            tvAuthor.text = "De: $senderName"
+            tvMessage.text = message.content
         }
         supportActionBar?.hide()
     }
