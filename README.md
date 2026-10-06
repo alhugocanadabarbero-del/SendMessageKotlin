@@ -48,12 +48,19 @@ A continuación se presentan las capturas reales de la aplicación en ejecución
 
 | Pantalla Principal (`SendMessageActivity`) | Pantalla de Visualización (`ViewMessageActivity`) |
 | :---: | :---: |
-| ![Captura Envío - SendMessageActivity](docs/images/emulator_send.png) | ![Captura Vista - ViewMessageActivity](docs/images/emulator_view.png) |
+| ![SendMessageActivity](Recursos/sendmessageimagen.png) | ![ViewMessageActivity](Recursos/viewmessageimagen.png) |
 
-* **Pantalla de Envío (`SendMessageActivity`)**: Muestra el título decorativo *"Aplicación para enviar mensajes"*, el campo de texto ingresado *"Hola qué tal"* y el botón inferior morado para transmitir el mensaje.
-* **Pantalla de Visualización (`ViewMessageActivity`)**: Muestra la recepción correcta del mensaje *"Hola qué tal"* enviado desde la primera pantalla junto al icono inferior.
+### 1. Pantalla de Envío (`SendMessageActivity`)
+![SendMessageActivity](Recursos/sendmessageimagen.png)
 
-> *Nota: Para visualizar las imágenes en GitHub, guarda las capturas en la carpeta `docs/images/` con los nombres `emulator_send.png` y `emulator_view.png`.*
+* Muestra el título decorativo *"Aplicación para enviar mensajes"*, el campo de texto ingresado y el botón inferior para transmitir el mensaje.
+
+---
+
+### 2. Pantalla de Visualización (`ViewMessageActivity`)
+![ViewMessageActivity](Recursos/viewmessageimagen.png)
+
+* Muestra la recepción correcta del mensaje enviado desde la primera pantalla.
 
 ---
 

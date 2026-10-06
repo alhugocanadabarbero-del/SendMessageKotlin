@@ -9,6 +9,15 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.sendmessage.model.Message
 
+/**
+ * Esta actividad muestra el mensaje enviado desde SendMessageActivity.
+ *
+ * <p>Captura de pantalla de la pantalla de visualización:</p>
+ * <p><img src="../../Recursos/viewmessageimagen.png" alt="ViewMessageActivity Screenshot"/></p>
+ *
+ * @author Hugo Cañada
+ * @version 1.0
+ */
 class ViewMessageActivity : AppCompatActivity() {
 
     companion object {
@@ -34,13 +43,13 @@ class ViewMessageActivity : AppCompatActivity() {
         tvMessage.text = message
         */
 
-        // 2. Recoger objeto Serializable (Message)
+        // 2. Recoger objeto Parcelable (Message)
         val bundle = intent.extras
         val message = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
-            bundle?.getSerializable("KEY_MESSAGE", Message::class.java)
+            bundle?.getParcelable("KEY_MESSAGE", Message::class.java)
         } else {
             @Suppress("DEPRECATION")
-            bundle?.getSerializable("KEY_MESSAGE") as? Message
+            bundle?.getParcelable<Message>("KEY_MESSAGE")
         }
 
         if (message != null) {

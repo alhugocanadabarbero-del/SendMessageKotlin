@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.dokka)
+    alias(libs.plugins.kotlin.parcelize)
 }
 
 android {
@@ -32,6 +34,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
     buildFeatures {
         viewBinding = true
     }
@@ -54,11 +59,9 @@ dependencies {
 tasks.dokkaHtml {
     moduleName.set("SendMessage")
     outputDirectory.set(rootProject.file("documentación"))
-    dokkaSourceSets {
-        create("main") {
-            sourceRoots.from(file("src/main/java"))
-            jdkVersion.set(11)
-            noAndroidSdkLink.set(true)
-        }
+    dokkaSourceSets.named("main") {
+        sourceRoots.from(file("src/main/java"))
+        jdkVersion.set(11)
+        noAndroidSdkLink.set(true)
     }
 }

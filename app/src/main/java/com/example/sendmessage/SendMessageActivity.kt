@@ -12,14 +12,17 @@ import com.example.sendmessage.model.Person
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.example.sendmessage.model.Message
 /**
- *Esta es la priemra actividad de la aplicacion que realiza las operaciones:
- * <al>
- *          <li>Crear un componente EditText y Buttom en XML</li>
+ * Esta es la primera actividad de la aplicación que realiza las operaciones:
+ * <ul>
+ *          <li>Crear un componente EditText y Button en XML</li>
  *          <li>Lanzar un evento en un componente Visual</li>
- *          <li>Crea el Internet junto con el Bundle para pasar a otra actividad</li>
+ *          <li>Crea el Intent junto con el Bundle para pasar a otra actividad</li>
  *          <li>El ciclo de vida de la <code>Activity</code></li>
  *          <li>Ver la pila de Actividades</li>
- * </al>
+ * </ul>
+ *
+ * <p>Captura de pantalla de la pantalla de envío:</p>
+ * <p><img src="../../Recursos/sendmessageimagen.png" alt="SendMessageActivity Screenshot"/></p>
  *
  * @author Hugo Cañada
  * @version 1.0
@@ -76,7 +79,7 @@ class SendMessageActivity : AppCompatActivity() {
         val receiver= Person("8712312312P","Pepe","Perez")
 
         val message = Message(1, etMessageText.text.toString(), sender, receiver)
-        bundle.putSerializable("KEY_MESSAGE", message)
+        bundle.putParcelable("KEY_MESSAGE", message)
         intent.putExtras(bundle)
         startActivity((intent))
     }
