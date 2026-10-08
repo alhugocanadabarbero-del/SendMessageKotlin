@@ -67,7 +67,7 @@ class SendMessageActivity : AppCompatActivity() {
     }
 
     /**
-     * Funcion que crea un mensaje cin la informacion de la persona que encia y de la persona que recoge el mesnaje
+     * Funcion que crea un mensaje con la informacion de la persona que envia y de la persona que recoge el mensaje
      */
     private fun sendMessage(){
         //1.Crear el Intent

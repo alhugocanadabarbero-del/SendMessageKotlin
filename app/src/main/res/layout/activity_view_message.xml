@@ -9,11 +9,11 @@
     tools:context=".ViewMessageActivity"
     android:orientation="vertical">
 
-
     <TextView
         android:id="@+id/tvAuthor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/tvAuthor_textSize"
         android:text="@string/tvAuthor"
         android:textColor="@color/white" />
 
@@ -22,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:textSize="@dimen/tvMessage_textSize"
         android:text="@string/tvMessage"
         android:textColor="@color/white" />
 
@@ -30,7 +31,5 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/image_height"
         android:contentDescription="@string/tvImage"
-        app:srcCompat="@drawable/baseline_mode_comment_24"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:srcCompat="@drawable/baseline_mode_comment_24" />
 </LinearLayout>
